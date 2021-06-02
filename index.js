@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var email_1 = require("./email");
+var sms_1 = require("./sms");
+var push_1 = require("./push");
+var Emailnotification = new email_1.EmailNotification('userTest@gmail.com', new Date(), "no olvides salir sin mascarilla");
+var smsNotification = new sms_1.SMSNoification('userTest@gmail.com', new Date(), "no olvides salir sin mascarilla");
+var pushNotification = new push_1.PushNotification('userTest@gmail.com', new Date(), "no olvides salir sin mascarilla");
+Emailnotification.sendNotification();
+smsNotification.sendNotification();
+pushNotification.sendNotification();
